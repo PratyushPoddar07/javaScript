@@ -31,9 +31,11 @@ html,body{
     padding-bottom: 50px;
 }
 #left h1{
-    font-size: 140px;
+    /* font-size: 140px; */
+    font-size: 8.7vw;
     font-weight: 500;
-    line-height: 150px;
+    /* line-height: 150px; */
+    line-height: 8.8vw;
     font-family: work sans;
 }
 #bottom-left{
@@ -72,15 +74,18 @@ html,body{
 
 #left h2{
     margin-top: 50px;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 2vw;
     margin-bottom: 15px;
 }
 #left p{
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.2vw;
     width: 65%;
     font-weight: 600;
     color: #444;
-    line-height: 30px;
+    /* line-height: 30px; */
+    line-height: 1.6 vw;
 }
 
 #right{
@@ -146,4 +151,160 @@ html,body{
     font-weight: 500;
     
 
+}
+
+@media (max-width:600px) {
+    #main{
+        height: 100%;
+        width: 100%;
+        /* background-color: red; */
+        display: flex; 
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding: 40px;
+        padding-top: 40px;
+        gap: 30px;
+    }
+
+    #left{
+        height: fit-content;
+        width: 100%;
+        /* background-color: blue;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* align-items: center; */
+        padding-bottom: 50px;
+        gap: 40px;
+    }
+    #left h1{
+        /* font-size: 140px; */
+        font-size: 18.7vw;
+        font-weight: 500;
+        /* line-height: 150px; */
+        line-height: 18vw;
+        font-family: work sans;
+    }
+    #bottom-left{
+        /* height: 40%; */
+        width: 100%;
+        /* background-color: pink; */
+    }
+    #color{
+        /* background-color: blue; */
+        width: fit-content;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50px;
+        border: 1.5px solid black;
+    }
+    #colorh5{
+        font-size: 13px;
+        margin-right: 5px;
+        font-weight: 500;
+    }
+    #color1{
+        height: 12px;
+        width: 12px;
+        background-color: burlywood;
+        border-radius: 50%;
+        margin: 3px;
+    }
+    #color2{
+        height: 12px;
+        width: 12px;
+        background-color: brown;
+        border-radius: 50%;
+    }
+    
+    #left h2{
+        margin-top: 20px;
+        /* font-size: 30px; */
+        font-size: 2vw;
+        margin-bottom: 10px;
+    }
+    #left p{
+        /* font-size: 20px; */
+        font-size: 2.2vw;
+        width: 85%;
+        font-weight: 600;
+        color: #444;
+        /* line-height: 30px; */
+        line-height: 3.6 vw;
+    }
+    #right{
+        height: 50%;
+        width: 100%;
+        /* background-color: greenyellow; */
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #right-top{
+        height: 80px;
+        width: 100%;
+        position: relative;
+        /* background-color: red; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 0px;
+    
+    }
+    #right-top h4{
+        font-size: 25px;
+        font-family: work sans;
+        font-weight: 600;
+    
+    }
+    #right-top h5{
+        font-size: 16px;
+    }
+    #right-top h5 i{
+        color: goldenrod;
+    }
+    #right img{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    #black-gola{
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        background-color: rgb(3, 3, 7);
+        border-radius: 50%;
+        color: white;
+        right: -5%;
+        top: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -1%;
+        /* transform: translate(50%,-50%); */
+    }
+    #black-gola h5{
+        font-size: 10px;
+        text-align: left;
+        font-weight: 400;
+    }
+    #rotated{
+        position: absolute;
+        left: 10%;
+        right: 0%;
+        /* background-color: red; */
+        bottom: 40%;
+        rotate: 0deg;
+        transform: 0 0;
+        /* top: 10%; */ 
+    
+        font-size: 30px;
+        font-weight: 500;
+        
+    
+    }
+    
 }
